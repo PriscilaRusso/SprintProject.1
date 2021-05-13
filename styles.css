@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500&display=swap');
+
+:root {
+  --altotriangulo: 40px;
+  --posiciontriangulo: -39px;
+  --altotriangulo2: 80px;
+  --posiciontriangulo2: -79px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #060A24;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex > * { 
+  flex-grow: 1;
+}
+
+article.flex > * {
+  flex-basis: 50%;
+  padding: 0 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.padding {
+  padding: 25px;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.center {
+  justify-content: center;
+  text-align: center;
+}
+
+.right {
+   justify-content: flex-end;
+}
+
+header .flex {
+  align-items: center;
+}
+
+header {
+  padding: 1em 1.8em;
+}
+
+header .logo {
+  max-width: 36px;
+  display: block;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.menu {
+  text-align: right;
+}
+
+.menu img {
+  width: 20px; 
+  cursor: pointer;
+}
+
+.nav {
+  height: 0;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  background-color: #0000A3;
+}
+
+.menu .nav a {
+  text-transform: uppercase;
+  padding: 0.25em 0.75em 0.25em 2em;
+  display: block;
+  border: 1px solid #060A24;
+  color: white;
+}
+
+.menu .nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3) ;
+}
+
+.check {
+  display: none;
+}
+
+.check:checked ~ .nav {
+  transform: translateX(0%);
+  height: 127px ;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: normal;
+}
+
+h1, h2 {
+  font-size: 36px;
+  margin-bottom: 0.25em;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 36px;
+  margin-bottom: 1.25em;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+.hero {
+   padding-bottom: 3em ;
+}
+
+.hero p {
+  margin-bottom: 2em;
+}
+
+.btn {
+  display: block;
+  background-color: #00F3BB;
+  text-align: center;
+  padding: 1em; 
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+  color: #060A24;
+}
+
+.s1 {
+  background: linear-gradient(#0000FF, #0000A3) ;
+  color: white;
+  position: relative;
+  padding-top: 2em;
+  padding-bottom: 6em;
+}
+
+.s1 article {
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+.triangle-1 {
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background-color:#0000FF;
+  top: var(--posiciontriangulo);
+}
+
+.triangle-2 {
+  background-color: #0000A3;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  bottom: var(--posiciontriangulo);
+}
+
+.triangle-1,
+.triangle-2 {
+  height: var(--altotriangulo);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+ .phone img {
+  width: 100%;
+  margin-bottom: 20px;
+  max-width: 350px;
+}
+
+ .s2 {
+   margin-top: -80px;
+   position: relative;
+   z-index: 1;
+}
+
+.images img {
+  width: 100%;
+  display: block;
+}
+
+.images {
+  padding: 25px 0;
+}
+
+.images h2 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.s3 article{
+  text-align: center;
+  padding: 20px 0 60px;
+  width: 100%;
+}
+
+.s3 article img {
+  margin-bottom: 15px;
+}
+
+.s4 {
+  background: linear-gradient(#0000FF, #0000A3) ;
+  color: white;
+  position: relative;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  text-align: center;
+}
+
+footer {
+  font-size: 14px;
+  
+}
+
+.social {
+  justify-content: space-between;
+  display: flex;
+}
+
+.social img {
+  width: 16px;
+  margin: 5px 25px;
+}
+
+.copy {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.max-width {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.menu .nav {
+  height: auto;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: unset;
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+}
+
+.check:checked ~ .nav {
+  height: auto; 
+  width: auto;
+}
+
+.menu .nav a {
+  text-transform: uppercase;
+  padding: 0.25em 0.75em 0.25em 2em;
+  display: block;
+  border: none;
+  color: #060A24;
+}
+
+.menu label {
+  display: none;
+}
+
+.menu img {
+  display: none;
+}
+
+.padding {
+  padding: 25px 60px;
+}
+
+.btn {
+  max-width: 226px;
+}
+
+.padding-LR {
+  padding: 0 100px;
+}
+
+.hero {
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+.triangle-1 {
+  top: var(--posiciontriangulo2);
+}
+
+.triangle-2 {
+  bottom: var(--posiciontriangulo2);
+}
+
+.triangle-1,
+.triangle-2 {
+  height: var(--altotriangulo2);
+ }
+
+.s2 {
+  margin-top: 0;
+}
+
+.s2.flex > * {
+  flex-basis: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.s2 .phone {
+  align-items:flex-end ;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+.images .flex > * {
+  width: 33.3%;
+}
+
+.s3 {
+  padding-bottom: 6em;
+}
+
+.s3 article {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 25%;
+}
+
+.s4 {
+  padding-top: 6em;
+  padding-bottom: 8em;
+}
+
+.s4 .btn {
+  margin: 0.5em auto;
+  max-width: 300px;
+}
+
+.social img {
+  margin-left: 25px;
+}
+
+footer .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.social {
+  justify-content: flex-end;
+}
+
+}
+
+@media screen and (min-width:1100px) {
+
+header{
+  padding: 1em 0;
+}
+
+}
