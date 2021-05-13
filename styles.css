@@ -259,6 +259,7 @@ footer {
   width: 16px;
   margin: 5px 25px;
   height: auto;
+  display: block;
 }
 
 .copy {
