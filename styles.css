@@ -28,6 +28,8 @@ a {
 .flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex > * { 
@@ -150,7 +152,7 @@ p {
 
 .btn {
   display: block;
-  background-color: #00F3BB;
+  background-color: #6af5d4;
   text-align: center;
   padding: 1em; 
   font-size: 16px;
@@ -158,6 +160,10 @@ p {
   text-transform: uppercase;
   margin: 0.5em 0;
   color: #060A24;
+}
+
+.btn:hover {
+  background-color: #15c79d;
 }
 
 .s1 {
@@ -255,6 +261,7 @@ footer {
 
 .copy {
   text-align: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -263,7 +270,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 2;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255);
 }
 
 .max-width {
