@@ -157,18 +157,18 @@ p {
 
 .btn {
   display: block;
-  background-color: #6af5d4;
+  background: rgb(0,0,255);
   text-align: center;
   padding: 1em; 
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
   margin: 0.5em 0;
-  color: #060A24;
+  color: #fff;
 }
 
 .btn:hover {
-  background-color: #15c79d;
+  background: linear-gradient(45deg, rgba(0,0,255,1) 0%, rgba(21,199,157,1) 100%);
 }
 
 .s1 {
