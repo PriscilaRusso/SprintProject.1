@@ -260,9 +260,9 @@ footer {
 }
 
 .social img {
-  width: 16px;
+  width: auto;
   margin: 5px 25px;
-  height: auto;
+  height: 16px;
   display: block;
 }
 
