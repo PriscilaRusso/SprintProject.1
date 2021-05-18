@@ -14,6 +14,11 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+
 body {
   color: #060A24;
   font-family: 'IBM Plex Mono', monospace;
@@ -37,7 +42,7 @@ a {
 }
 
 article.flex > * {
-  flex-basis: 50%;
+  flex-basis: 100%;
   padding: 0 0.5rem;
   margin-bottom: 1rem;
 }
@@ -361,6 +366,10 @@ h1 {
   flex-direction: column;
 }
 
+article.flex > * {
+  flex-basis: 50%;
+}
+
 .s2 .phone {
   align-items:flex-end ;
 }
@@ -409,13 +418,13 @@ footer .flex {
 
 .social {
   justify-content: flex-end;
-}
+} 
 
 }
 
 @media screen and (min-width:1100px) {
 
-header{
+header {
   padding: 1em 0;
 }
 
