@@ -157,7 +157,7 @@ p {
 
 .btn {
   display: block;
-  background: rgb(0,0,255);
+  background: rgba(21,199,157,1);
   text-align: center;
   padding: 1em; 
   font-size: 16px;
