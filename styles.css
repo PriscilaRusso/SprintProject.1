@@ -259,11 +259,16 @@ footer {
   display: flex;
 }
 
-.social img {
-  width: auto;
+.social a i {
+  
   margin: 5px 25px;
   height: 16px;
   display: block;
+  font-size: 1.5em;
+}
+
+.social a i:hover {
+  color:#0000FF;
 }
 
 .copy {
@@ -402,7 +407,7 @@ h2 {
   max-width: 300px;
 }
 
-.social img {
+.social a  {
   margin-left: 25px;
 }
 
